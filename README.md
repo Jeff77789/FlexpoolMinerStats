@@ -33,7 +33,7 @@ https://pygsheets.readthedocs.io/en/stable/authorization.html
   * ETH 5 min change (typically block reward or payout)
 
 
-### Known Bugs
+## Known Bugs
 * Rolling 24h difference does not calculate correctly across payout periods
 * Only works for 5 minute intervals, cell references need to be changed if shorter / longer intervals are used
 * Update intervals less than 1 minute or >59 minutes not tested

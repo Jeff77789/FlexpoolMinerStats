@@ -28,7 +28,7 @@ https://pygsheets.readthedocs.io/en/stable/authorization.html
 
 1. Running the script the first time, an authorization needs to be performed through Google following the link in the console
 
-1. *Go to your Google Sheet to monitor stats*
+1. Go to your Google Sheet to monitor stats
     * Time
     * ETH Balance
     * ETH-USD Exchange Rate

@@ -2,7 +2,7 @@
 Stats monitoring, recording and charting for Flexpool Miners
 By default, stats are saved to Google Sheets once every 5 minutes and when the script is first run
 
-To start monitoring Flexpool stats, run the FlexpoolMinerStats.py file
+To start monitoring Flexpool stats, use the FlexpoolMinerStats.py file
 
 Tested on Python 3.8.3 - Libraries required:
 * flexpoolapi
@@ -15,11 +15,13 @@ Tested on Python 3.8.3 - Libraries required:
 1. Copy this Google sheet to your own Google Drive
 https://docs.google.com/spreadsheets/d/1_Hyl4bFd4K2xdYm2YQf3VLd5xkLQiSOeGIJvJWyukyw/edit?usp=sharing
 
-1. Go to the first sheet and copy the URL to your code
+1. Create a new directory and download the FlexpoolMinerStats.py file to the directory
 
-1. Copy and insert your Flexpool Miner address to your code
+1. Go to the first sheet and copy the URL to your .py file (line 28)
 
-1. Follow the instructions here to receive a client_secret.json file (this is the trickest part)
+1. Copy and insert your Flexpool Miner address to your code (line 18)
+
+1. Follow the instructions here to download a client_secret.json file, put this in the same directory as your .py file (this is the trickest part)
 https://pygsheets.readthedocs.io/en/stable/authorization.html
 
 1. Running the script the first time, an authorization needs to be performed through Google following the link in the console
@@ -32,6 +34,8 @@ https://pygsheets.readthedocs.io/en/stable/authorization.html
   * 5 min USD change
   * 24 hour rolling difference
   * ETH 5 min change (typically block reward or payout)
+
+1. A new row should be added to the Google Sheet every 5 minutes (9:30 AM, 9:35 AM, 9:40 AM, etc)
 
 
 ## Known Bugs

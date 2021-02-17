@@ -63,7 +63,7 @@ if __name__ == "__main__":
     # Wrap miner_monitor() in a while loop with try & except to keep running when errors are encountered
     while True:
         try:
-            miner_monitor(1)
+            miner_monitor(5)
         except:
             pass
         time.sleep(15)

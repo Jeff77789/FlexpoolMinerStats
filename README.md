@@ -4,7 +4,7 @@ By default, stats are saved to Google Sheets once every 5 minutes and when the s
 
 To start monitoring Flexpool stats, use the FlexpoolMinerStats.py file
 
-![MinerStats Screenshot](/Stats.png)
+![Miner stats screenshot](/Miner_stats.png)
 
 Tested on Python 3.8.3 - Libraries required:
 * flexpoolapi

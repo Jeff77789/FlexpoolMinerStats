@@ -27,13 +27,13 @@ https://pygsheets.readthedocs.io/en/stable/authorization.html
 1. Running the script the first time, an authorization needs to be performed through Google following the link in the console
 
 1. *Go to your Google Sheet to monitor stats*
-  * Time
-  * ETH Balance
-  * ETH-USD Exchange Rate
-  * USD Balance
-  * 5 min USD change
-  * 24 hour rolling difference
-  * ETH 5 min change (typically block reward or payout)
+    * Time
+    * ETH Balance
+    * ETH-USD Exchange Rate
+    * USD Balance
+    * 5 min USD change
+    * 24 hour rolling difference
+    * ETH 5 min change (typically block reward or payout)
 
 1. A new row should be added to the Google Sheet every 5 minutes (9:30 AM, 9:35 AM, 9:40 AM, etc)
 

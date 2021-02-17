@@ -1,5 +1,6 @@
 # FlexpoolMinerStats
 Stats monitoring, recording and charting for Flexpool Miners
+
 By default, stats are saved to Google Sheets once every 5 minutes and when the script is first run
 
 To start monitoring Flexpool stats, use the FlexpoolMinerStats.py file
@@ -44,3 +45,4 @@ https://pygsheets.readthedocs.io/en/stable/authorization.html
 * Rolling 24h difference does not calculate correctly across payout periods
 * Only works for 5 minute intervals, cell references need to be changed if shorter / longer intervals are used
 * Update intervals less than 1 minute or >59 minutes not tested
+* Not tested with daylight savings time

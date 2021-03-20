@@ -51,7 +51,8 @@ def miner_monitor(interval_minutes=5):
         wks.update_value((2, 4), ETH_price['ETH']['USD'], True)
         wks.update_value((2, 5), flex_balance / 1e18 * ETH_price['ETH']['USD'], True)
         wks.update_value((2, 6), "=E2-E3")  # Difference from previous cell
-        wks.update_value((2, 7), "=E2-E289")  # 24 hour rolling revenue based on 5 min intervals
+        # wks.update_value((2, 7), "=E2-E289")  # 24 hour rolling revenue based on 5 min intervals, simple
+        wks.update_value((2, 7), "=IF((E2-E289)<0, (max(E2:E289)-E289+E2),  (E2-E289))")  # 24 hour rolling revenue based on 5 min intervals, updated for tracking across payouts
         wks.update_value((2, 8), "=IF(C2-C3<>0,C2-C3,)")  # ETH Difference for blocks and payouts
 
         sleep_time = get_sleep_time(interval_minutes)
